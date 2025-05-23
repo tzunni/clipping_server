@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Icon } from "@iconify/react";
 import './App.css'
 
 function App() {
@@ -8,26 +7,51 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div id="app">
+        <div id="header">
+          <div id="header-logo">
+            <h1>Clips</h1>
+          </div>
+          <div id="header-menu">
+            <button id="header-button-upload" className="button">
+              <Icon icon="material-symbols:videocam-outline"></Icon>Upload
+            </button>
+            <button id="header-button-login" className="button">
+              <Icon icon="material-symbols:person"></Icon>Sign In
+            </button>
+          </div>
+        </div>
+        <hr></hr>
+        <div id="main-view">
+          <div id="main-view-panel">
+            <div id="panel-title">Keywords</div>
+            <div id="panel-chips">
+              <div>
+                <span className="chip" id="user-chip">User: @Danny ✕</span>
+              </div>
+              <div>
+                <span className="chip" id="game-chip">Game: Apex Legends ✕</span>
+              </div>
+              <div>
+                <span className="chip" id="type-chip">Type: Frag ✕</span>
+              </div>
+              <div id="panel-date-section">
+                <div>Date</div>
+                <div id="panel-date-row">
+                  <span>Apr 2022 – May 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="main-view-content">
+            <div id="main-view-content-header">
+              <div id="main-view-content-header-search"></div>
+              <div id="main-view-content-header-sort"></div>
+            </div>
+            <div id="main-view-content-body"></div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

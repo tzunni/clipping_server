@@ -1,42 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #bdbdbd;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+svg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vw 2vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#header-logo img {
+  height: 5vh;
+  width: 5vh;
+  margin: 1vh;
 }
 
-.card {
-  padding: 2em;
+#header-menu {
+  display: flex;
+  gap: 1vw;
+  padding: 1vw;
+  height: 3vh;
+  width: auto;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
 }
 
-.read-the-docs {
-  color: #888;
+.button {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.button:hover {
+  background: #e0e0e0;
+}
+
+#main-view {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  padding: 2vh 2vw;
+}
+
+#main-view-panel {
+  width: 22vw;
+  min-width: 220px;
+  background: #fff;
+  border: 1px dashed #bdbdbd;
+  border-radius: 8px;
+  padding: 1.5vw 1vw;
+  margin: 0 1vw 0 0;
+  box-sizing: border-box;
+}
+
+#panel-title {
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+
+#panel-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.chip {
+  display: inline-block;
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 0.2em 0.8em;
+  margin-right: 0.5em;
+  font-size: 0.95em;
+}
+
+#panel-date-section {
+  margin-top: 1vw;
+  font-size: 0.95em;
+}
+
+#panel-date-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#main-view-content {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
