@@ -109,12 +109,18 @@ svg {
 #panel-date-section {
   margin-top: 1em;
   font-size: 0.95em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #panel-date-row {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  font-size: 0.95em;
+  font-weight: 700;
+  padding-right: 1em;
 }
 
 #main-view-content {
