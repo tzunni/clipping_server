@@ -35,10 +35,23 @@ function App() {
               <div>
                 <span className="chip" id="type-chip">Type: Frag ✕</span>
               </div>
+              <div id="filter-list">
+                <div id="filter">
+                  <input type="text" id="filter-input" placeholder="Enter your filters" />
+                  <button id="filter-button" className="button">+</button>
+                </div>
+              </div>
+
+
               <div id="panel-date-section">
-                <div>Date</div>
-                <div id="panel-date-row">
-                  <span>Apr 2022 – May 2025</span>
+                <div id="date-title">Date</div>
+                <div id="panel-date-first">
+                  <p>After:</p>
+                  <input type="date" id="panel-date-start" />
+                </div>
+                <div id="panel-date-second">
+                  <p>Before:</p>
+                  <input type="date" id="panel-date-end" />
                 </div>
               </div>
             </div>
