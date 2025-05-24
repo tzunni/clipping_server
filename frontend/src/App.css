@@ -155,12 +155,13 @@ svg {
 }
 
 #filter {
+  padding-top: 0.7em;
   display: flex;
   flex-direction: row;
   height: 1.5em;
 }
 
-#filter button {
+#filter .button {
   width: .3em;
 }
 
